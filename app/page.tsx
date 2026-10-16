@@ -177,7 +177,7 @@ export default function Home() {
                         <span className="block text-sm font-medium">Ali Abdaal</span>
                         <span className="block text-sm text-white/75">Cofounder of Superfocus</span>
                       </span>
-                      <span className="text-sm text-white/75">Watch on YouTube ↗</span>
+                      <span className="text-sm text-white/75">Watch on YouTube</span>
                     </span>
                   </span>
                 </a>
@@ -281,7 +281,6 @@ export default function Home() {
                     className="inline-flex shrink-0 items-center gap-1.5 self-start rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-ink/85 sm:self-center"
                   >
                     Book a chat
-                    <span aria-hidden>↗</span>
                   </a>
                 </div>
               </section>
