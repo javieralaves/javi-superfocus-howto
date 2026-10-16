@@ -27,6 +27,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://howtosf.vercel.app"),
   title: "How I Use Superfocus",
   description:
     "A personal guide to planning time, working toward goals, and reflecting on progress with Superfocus.",
