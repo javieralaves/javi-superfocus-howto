@@ -56,7 +56,7 @@ const PROVIDERS: Array<{ id: ProviderId; name: string; meetings: Array<Meeting> 
   { id: "icloud", name: "iCloud Calendar", meetings: [{ id: "i1", title: "Dentist", start: 17.25, end: 18 }] },
   {
     id: "link",
-    name: "Subscribe to calendar via link",
+    name: "Subscribe via link",
     meetings: [{ id: "l1", title: "Company all-hands", start: 14.5, end: 15.25 }],
   },
 ];
