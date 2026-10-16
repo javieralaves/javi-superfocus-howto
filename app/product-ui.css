@@ -1,0 +1,186 @@
+/*
+ * Product UI tokens. Values mirror superos-frontend/src/styles.css (light theme),
+ * the same set the marketing site's code illustrations use.
+ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-overlay: var(--overlay);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-hover: var(--hover);
+  --color-selected: var(--selected);
+  --color-success: var(--success);
+  --color-success-strong: var(--success-strong);
+  --color-success-surface: var(--success-surface);
+  --color-warning-strong: var(--warning-strong);
+  --color-warning-surface: var(--warning-surface);
+  --color-coach: var(--coach);
+  --color-coach-surface: var(--coach-surface);
+  --color-calendar-grid: var(--calendar-grid);
+  --color-calendar-grid-today: var(--calendar-grid-today);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --shadow-module: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-float: 0 12px 32px -12px rgb(0 0 0 / 0.18), 0 1px 2px rgb(0 0 0 / 0.04);
+}
+
+:root {
+  --radius: 10px;
+  --background: oklch(0.97 0 0);
+  --foreground: oklch(0.205 0.015 260);
+  --card: oklch(0.995 0.002 260);
+  --card-foreground: oklch(0.205 0.015 260);
+  --muted: oklch(0.955 0.005 260);
+  --muted-foreground: oklch(0.52 0.015 260);
+  --primary: oklch(0.205 0.015 260);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.955 0.005 260);
+  --secondary-foreground: oklch(0.205 0.015 260);
+  --destructive: oklch(0.577 0.2 27);
+  --border: oklch(0.895 0.006 260);
+  --border-strong: oklch(0.82 0.008 260);
+  --border-subtle: oklch(0.935 0.004 260);
+  --surface-1: oklch(0.995 0.002 260);
+  --surface-2: oklch(0.965 0.004 260);
+  --surface-3: oklch(0.94 0.006 260);
+  --overlay: oklch(0.997 0.002 260);
+  --hover: oklch(0.955 0.005 260);
+  --selected: oklch(0.935 0.008 260);
+  --sidebar: oklch(1 0 0);
+  --sidebar-border: oklch(0.91 0.006 260);
+  --success: #00ca4a;
+  --success-strong: #00a83e;
+  --success-surface: #ecfbf2;
+  --warning-strong: #ff9518;
+  --warning-surface: #fff1dc;
+  --coach: #6850e5;
+  --coach-surface: #f1eefd;
+  --calendar-grid: oklch(1 0 0);
+  --calendar-grid-today: oklch(0.985 0.003 260);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@utility type-micro {
+  font-size: 10px;
+  line-height: 12px;
+}
+@utility type-caption {
+  font-size: 11px;
+  line-height: 14px;
+}
+@utility type-body {
+  font-size: 12px;
+  line-height: 16px;
+}
+@utility type-body-lg {
+  font-size: 14px;
+  line-height: 20px;
+}
+@utility type-heading-sm {
+  font-size: 16px;
+  line-height: 22px;
+}
+@utility type-heading {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* Coach ghost blocks, same treatment as coach-bar.css */
+.sf-ghost {
+  outline: 1.5px dashed var(--ghost-line);
+  outline-offset: -1.5px;
+  background:
+    linear-gradient(
+      color-mix(in oklch, var(--card) 45%, transparent),
+      color-mix(in oklch, var(--card) 45%, transparent)
+    ),
+    var(--ghost-bg);
+}
+.sf-ghost--removed {
+  opacity: 0.55;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 5px,
+    color-mix(in oklch, var(--ghost-line) 26%, transparent) 5px 6px
+  );
+}
+.sf-trace {
+  opacity: 0.35;
+  filter: saturate(0);
+  outline: 1px dashed color-mix(in oklch, var(--foreground) 35%, transparent);
+  outline-offset: -1px;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 6px,
+      color-mix(in oklch, var(--foreground) 12%, transparent) 6px 7px
+    ),
+    var(--surface-2);
+}
+
+@keyframes sf-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.07);
+    opacity: 1;
+  }
+}
+.sf-breathe {
+  animation: sf-breathe 2.6s ease-in-out infinite;
+}
+
+@keyframes sf-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+.sf-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--muted-foreground) 0%,
+    var(--muted-foreground) 40%,
+    var(--foreground) 50%,
+    var(--muted-foreground) 60%,
+    var(--muted-foreground) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: sf-shimmer 1.8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sf-breathe,
+  .sf-shimmer {
+    animation: none;
+  }
+}

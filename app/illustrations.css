@@ -1,0 +1,52 @@
+/*
+ * Code illustrations ported from the marketing site. Their layouts are tuned
+ * to the product type scale (superos-frontend/src/styles.css), which is tighter
+ * than this app's, so the overrides stay scoped to `.sf-ui` scenes.
+ */
+:root {
+  --coach-brand: #6850e5;
+}
+
+@theme inline {
+  --color-coach-brand: var(--coach-brand);
+}
+
+.sf-ui {
+  font-family: var(--font-public-sans), "Public Sans", system-ui, sans-serif;
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+.sf-ui .font-mono {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+.sf-ui .type-body-lg {
+  line-height: 18px;
+}
+.sf-ui .type-heading-sm {
+  line-height: 20px;
+}
+.sf-ui .type-heading {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sf-placeholder {
+  display: none;
+}
+
+@keyframes slide-text {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes slide-text {
+    from {
+      opacity: 1;
+    }
+  }
+}
