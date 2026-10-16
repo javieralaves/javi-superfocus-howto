@@ -54,27 +54,6 @@ export default function Home() {
     <>
       <ProgressBar />
 
-      <div className="sticky top-0 z-40 border-b border-rule/70 bg-paper/85 backdrop-blur-md">
-        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-          <a href="#top" className="flex items-center gap-1.5">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/sf-logo.svg" alt="" width={18} height={18} className="size-[18px]" />
-            <span className="text-sm font-semibold tracking-tight">
-              Superfocus
-            </span>
-            <span className="ml-1 hidden text-sm text-faded sm:inline">
-              / How I use it
-            </span>
-          </a>
-          <a
-            href={`#${summaryId}`}
-            className="text-sm text-faded transition-colors hover:text-ink"
-          >
-            Skip to summary
-          </a>
-        </div>
-      </div>
-
       <main id="top">
         <section className="mx-auto max-w-6xl px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
           <div className="flex items-center gap-3">
@@ -164,7 +143,7 @@ export default function Home() {
 
           <div>
             <article className="mx-auto max-w-[680px]">
-              <section id={introId} className="scroll-mt-24 pb-16">
+              <section id={introId} className="scroll-mt-8 pb-16">
                 <SectionHeader
                   number="00"
                   cadence="Before you start"
@@ -217,7 +196,7 @@ export default function Home() {
                 <section
                   key={section.id}
                   id={section.id}
-                  className="scroll-mt-24 border-t border-rule pt-14 pb-16 first:border-t-0 first:pt-0"
+                  className="scroll-mt-8 border-t border-rule pt-14 pb-16 first:border-t-0 first:pt-0"
                 >
                   <SectionHeader {...section} />
                   {section.visual && (
@@ -236,7 +215,7 @@ export default function Home() {
 
               <section
                 id={summaryId}
-                className="scroll-mt-24 border-t border-rule pt-14"
+                className="scroll-mt-8 border-t border-rule pt-14"
               >
                 <SectionHeader
                   number="10"
