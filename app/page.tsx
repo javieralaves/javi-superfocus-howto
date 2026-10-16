@@ -9,6 +9,7 @@ import { rhythm, sections } from "./_content/sections";
 const summaryId = "what-it-comes-down-to";
 const introId = "start-here";
 const overviewUrl = "https://www.youtube.com/watch?v=zygOP8H0H1E";
+const bookingUrl = "https://cal.com/javi-sf/chat";
 
 const tocItems: TocItem[] = [
   { id: introId, number: "00", title: "Start with the overview" },
@@ -269,6 +270,40 @@ export default function Home() {
                     more helpful as it understands my goals, preferences, and
                     progress.
                   </p>
+                </div>
+
+                <div className="mt-6 flex flex-col gap-6 rounded-2xl border border-rule bg-white/60 px-8 py-8 sm:flex-row sm:items-center sm:px-10">
+                  <span className="relative shrink-0 self-start sm:self-center">
+                    <Image
+                      src="/javi.jpeg"
+                      alt="Javier Alaves"
+                      width={56}
+                      height={56}
+                      className="size-14 rounded-full object-cover ring-1 ring-rule"
+                    />
+                    <span className="absolute -right-1 -bottom-1 flex size-6 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-rule">
+                      <img src="/sf-logo.svg" alt="Superfocus" className="size-3.5" />
+                    </span>
+                  </span>
+                  <div className="flex-1">
+                    <p className="text-lg font-medium text-ink">
+                      Need a hand with Superfocus?
+                    </p>
+                    <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/70">
+                      If you&apos;re stuck, want help setting things up, or just
+                      want to talk through how you use it, book a 30-minute chat
+                      with me. Happy to help with anything.
+                    </p>
+                  </div>
+                  <a
+                    href={bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex shrink-0 items-center gap-1.5 self-start rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-ink/85 sm:self-center"
+                  >
+                    Book a chat
+                    <span aria-hidden>↗</span>
+                  </a>
                 </div>
               </section>
             </article>

@@ -81,14 +81,14 @@ function StatusButton({ status, onClick }: { status: Status; onClick: () => void
   if (status === "connecting")
     content = (
       <>
-        <Loader2 className="size-3 animate-spin" />
+        <Loader2 className="size-3 shrink-0 animate-spin" />
         Connecting
       </>
     );
   if (status === "connected")
     content = (
       <>
-        <Check className="size-3.5 stroke-[2.5]" />
+        <Check className="size-3.5 shrink-0 stroke-[2.5]" />
         Connected
       </>
     );
@@ -99,7 +99,7 @@ function StatusButton({ status, onClick }: { status: Status; onClick: () => void
       onClick={onClick}
       className={cn(
         BUTTON_SM,
-        "w-[96px] cursor-pointer",
+        "w-[108px] cursor-pointer",
         status === "connected" ? "bg-success-surface text-success-strong" : BUTTON_OUTLINE,
       )}
     >

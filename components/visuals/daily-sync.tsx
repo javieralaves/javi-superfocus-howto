@@ -288,7 +288,7 @@ function ReadStep() {
         </div>
         <TrajectoryChart
           width={518}
-          height={150}
+          height={210}
           padding={{ top: 16, right: 6, bottom: 8, left: 6 }}
           series={SERIES}
           xDomain={[-0.5, 12]}
@@ -301,7 +301,7 @@ function ReadStep() {
           drawSeconds={1.1}
         />
       </div>
-      <Rise delay={1.2} y={8} className="mt-3 flex items-start gap-3">
+      <Rise delay={1.2} y={8} className="mt-4 flex items-start gap-3">
         <div className="flex shrink-0 flex-col gap-1.5">
           <span className="flex items-center gap-1.5 type-body font-medium">
             <span className="size-2 rounded-full" style={{ background: GOALS.youtube.color }} />
