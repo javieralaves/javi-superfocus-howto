@@ -37,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${dmSans.variable} ${geistMono.variable} ${newsreader.variable} ${publicSans.variable} h-full antialiased`}
     >
       <body className={`${dmSans.className} min-h-full bg-paper text-ink`}>{children}</body>
