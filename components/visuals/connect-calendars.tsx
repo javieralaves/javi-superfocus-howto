@@ -10,7 +10,7 @@ import { BUTTON_OUTLINE, BUTTON_SM } from "@/components/illustrations/primitives
 import { EASE_OUT, Rise, Stage } from "@/components/illustrations/stage";
 import { Panel, Scene, formatDuration, useAutoStep, useAutopilot } from "./kit";
 
-type ProviderId = "google" | "outlook" | "icloud" | "link";
+export type ProviderId = "google" | "outlook" | "icloud" | "link";
 type Status = "idle" | "connecting" | "connected";
 
 interface Meeting {
@@ -24,7 +24,7 @@ const START = 8;
 const END = 18;
 const HOUR = 32;
 
-function Mark({ id, size = 22 }: { id: ProviderId; size?: number }) {
+export function Mark({ id, size = 22 }: { id: ProviderId; size?: number }) {
   const base = "flex shrink-0 items-center justify-center rounded-[6px] font-bold text-white";
   const style = { width: size, height: size, fontSize: size * 0.55 };
   if (id === "google") return <span className={base} style={{ ...style, background: "#4285f4" }}>G</span>;

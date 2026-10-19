@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { CoachIcon, MilestonesIcon } from "@/components/illustrations/icons";
 import { BUTTON_PRIMARY, BUTTON_SM } from "@/components/illustrations/primitives";
 import { EASE_OUT, Rise, Stage } from "@/components/illustrations/stage";
-import { Panel, Scene, useAutoStep, useAutopilot } from "./kit";
+import { Panel, Scene, StepFrame, useAutoStep, useAutopilot } from "./kit";
 
 /** Step icons from superos-frontend/src/features/compass/components/icons. */
 function CalendarStepIcon(props: SVGProps<SVGSVGElement>) {
@@ -192,21 +192,6 @@ export function UnlockChecklistVisual() {
     >
       <UnlockScene />
     </Stage>
-  );
-}
-
-/**
- * The per-step cards render at native size instead of inside a scaled Stage,
- * so their product-sized text stays legible on phones.
- */
-function StepFrame({ label, children }: { label: string; children: ReactNode }) {
-  return (
-    <figure
-      aria-label={label}
-      className="my-8 rounded-[24px] border border-rule bg-white/55 p-1.5 shadow-[0_1px_0_rgba(0,0,0,0.02),0_20px_40px_-30px_rgba(15,15,25,0.22)]"
-    >
-      <div className="sf-ui rounded-[18px] bg-[#f5f6f8] p-3 sm:p-4">{children}</div>
-    </figure>
   );
 }
 

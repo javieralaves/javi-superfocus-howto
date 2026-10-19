@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarSync } from "lucide-react";
 import { CoachingIllustration } from "@/components/illustrations/coaching-illustration";
 import { CoachIcon } from "@/components/illustrations/icons";
 import { FlowIllustration } from "@/components/illustrations/flow-illustration";
@@ -55,6 +55,25 @@ export const sections: Section[] = [
           gives me a clearer view of my availability and where I can
           realistically make time for the things I want to accomplish.
         </p>
+        <Link
+          href="/calendar-sync"
+          className="group !mt-10 flex items-center gap-3 rounded-xl border border-rule bg-white/50 px-4 py-3 text-sm leading-snug text-faded transition-colors hover:border-ink/15 hover:bg-white"
+        >
+          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+            <CalendarSync className="size-3.5" aria-hidden />
+          </span>
+          <span className="flex-1">
+            <span className="font-medium text-ink">
+              Having trouble with your calendars?
+            </span>{" "}
+            Learn how syncing works, customize what appears, and troubleshoot
+            common issues.
+          </span>
+          <ArrowRight
+            className="size-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+            aria-hidden
+          />
+        </Link>
       </>
     ),
   },
