@@ -1,5 +1,8 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { CoachingIllustration } from "@/components/illustrations/coaching-illustration";
+import { CoachIcon } from "@/components/illustrations/icons";
 import { FlowIllustration } from "@/components/illustrations/flow-illustration";
 import { ConnectCalendarsVisual } from "@/components/visuals/connect-calendars";
 import { DailySyncVisual } from "@/components/visuals/daily-sync";
@@ -269,6 +272,24 @@ export const sections: Section[] = [
           It&apos;s a useful perspective on my progress, informed by what
           Superfocus knows about my goals and follow-through.
         </p>
+        <Link
+          href="/first-coach-read"
+          className="group !mt-10 flex items-center gap-3 rounded-xl border border-rule bg-white/50 px-4 py-3 text-sm leading-snug text-faded transition-colors hover:border-ink/15 hover:bg-white"
+        >
+          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+            <CoachIcon className="size-3.5" />
+          </span>
+          <span className="flex-1">
+            <span className="font-medium text-ink">
+              Haven&apos;t had a coach read yet?
+            </span>{" "}
+            Here&apos;s how to unlock your first one.
+          </span>
+          <ArrowRight
+            className="size-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+            aria-hidden
+          />
+        </Link>
       </>
     ),
   },
