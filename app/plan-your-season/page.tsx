@@ -249,11 +249,12 @@ export default function PlanYourSeason() {
           <div className="prose-guide mt-6">
             <p>
               I try to stay flexible without making the distinctions
-              meaningless. When I&apos;m unsure, I ask: is this something
-              I&apos;m trying to change this season, or something I need to
-              keep looking after? The first is a goal. The second is a support
-              area. If that changes partway through, you can switch a goal to a
-              support area, or the other way round.
+              meaningless. When I&apos;m unsure, I ask: is this something I
+              want to deliberately prioritize this season, or something I
+              simply need to keep looking after? The first might deserve a
+              place among my seasonal goals. The second might be better suited
+              to a support area. And if my priorities change, I can adjust that
+              structure.
             </p>
             <p>
               For odds and ends that don&apos;t belong anywhere yet, there&apos;s
@@ -290,6 +291,23 @@ export default function PlanYourSeason() {
             These are examples, not a template. Your areas, and where they
             land, will look different.
           </p>
+
+          <aside className="mt-8 border-l-2 border-accent pl-4">
+            <p className="text-[0.95rem] leading-relaxed font-medium text-ink">
+              Already started your season?
+            </p>
+            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/70">
+              You don&apos;t necessarily need to start over. You can rename
+              goals and milestones, reorganize tasks, and change a goal into a
+              support area or vice versa.
+            </p>
+            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/70">
+              I&apos;d recommend adjusting what you&apos;ve already created
+              before considering a full reset. Your first structure doesn&apos;t
+              need to be perfect. You can refine it as you learn what works for
+              you.
+            </p>
+          </aside>
         </Part>
 
         <Part number="04" label="Protect time" title="Make time for what matters">
@@ -351,6 +369,36 @@ export default function PlanYourSeason() {
                 how I plan the next day
               </Link>{" "}
               in more detail.
+            </p>
+          </div>
+
+          <div className="prose-guide">
+            <h3>Start small, then refine</h3>
+            <p>
+              You don&apos;t need to organize everything perfectly before
+              getting started. I&apos;d recommend beginning with a relatively
+              simple setup:
+            </p>
+          </div>
+          <ol className="mt-4 space-y-3">
+            {[
+              "Define the few goals you want to prioritize this season.",
+              "Add support areas for the ongoing responsibilities you want to keep visible.",
+              "Create a handful of useful milestones and tasks.",
+              "Protect some time for your priorities during the coming week.",
+              "Start working, and adjust the structure as you learn what works.",
+            ].map((step, i) => (
+              <li key={step} className="flex gap-4 text-[1.0625rem] leading-relaxed text-ink/85">
+                <span className="font-mono text-sm leading-[1.9] text-accent tabular-nums">{i + 1}</span>
+                {step}
+              </li>
+            ))}
+          </ol>
+          <div className="prose-guide mt-6">
+            <p>
+              The important part is getting to a point where Superfocus helps
+              you make better decisions about your time. You can add more
+              detail when you actually need it.
             </p>
           </div>
         </Part>
