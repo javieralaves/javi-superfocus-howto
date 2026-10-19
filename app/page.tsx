@@ -167,7 +167,7 @@ export default function Home() {
                     <span className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-black/0" />
                     <span className="absolute inset-0 flex items-center justify-center">
                       <span className="flex size-16 items-center justify-center rounded-full bg-white/90 shadow-lg backdrop-blur transition-transform duration-300 group-hover:scale-105">
-                        <svg viewBox="0 0 24 24" className="ml-1 size-6 fill-ink" aria-hidden>
+                        <svg viewBox="0 0 24 24" className="size-6 translate-x-px fill-ink" aria-hidden>
                           <path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z" />
                         </svg>
                       </span>
