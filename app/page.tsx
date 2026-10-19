@@ -251,6 +251,43 @@ export default function Home() {
                   </p>
                 </div>
 
+                <aside className="mt-6 flex gap-4 rounded-2xl border border-rule px-6 py-5 sm:px-8">
+                  <span
+                    aria-hidden="true"
+                    className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="size-[1.1rem]"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </span>
+                  <div className="flex-1">
+                    <p className="font-medium text-ink">
+                      Join the Superfocus community
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-ink/70">
+                      We have a Slack community where you can connect with other
+                      Superfocus users, ask questions, share experiences, and
+                      stay up to date with what we&apos;re building. Open
+                      Superfocus and go to{" "}
+                      <strong className="font-medium text-ink">
+                        Settings → Help &amp; resources → Join community
+                      </strong>{" "}
+                      to join.
+                    </p>
+                  </div>
+                </aside>
+
                 <div className="mt-6 flex flex-col gap-6 rounded-2xl border border-rule bg-white/60 px-8 py-8 sm:flex-row sm:items-center sm:px-10">
                   <span className="relative shrink-0 self-start sm:self-center">
                     <Image
