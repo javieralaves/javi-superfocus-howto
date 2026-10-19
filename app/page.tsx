@@ -10,6 +10,7 @@ const summaryId = "what-it-comes-down-to";
 const introId = "start-here";
 const overviewUrl = "https://www.youtube.com/watch?v=zygOP8H0H1E";
 const bookingUrl = "https://cal.com/javi-sf/chat";
+const summaryNumber = String(sections.length + 1).padStart(2, "0");
 
 const tocItems: TocItem[] = [
   { id: introId, number: "00", title: "Start with the overview" },
@@ -18,7 +19,7 @@ const tocItems: TocItem[] = [
     number,
     title: shortTitle,
   })),
-  { id: summaryId, number: "10", title: "What it comes down to" },
+  { id: summaryId, number: summaryNumber, title: "What it comes down to" },
 ];
 
 function SectionHeader({
@@ -85,9 +86,9 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-faded">
             <span className="flex items-center gap-2">
               <span className="size-1.5 rounded-full bg-accent" />
-              10 sections
+              {sections.length + 1} sections
             </span>
-            <span>About 8 min read</span>
+            <span>About 9 min read</span>
             <a
               href={`#${introId}`}
               className="inline-flex items-center gap-1.5 rounded-full bg-ink px-4 py-2 font-medium text-paper transition-colors hover:bg-ink/85"
@@ -218,7 +219,7 @@ export default function Home() {
                 className="scroll-mt-8 border-t border-rule pt-14"
               >
                 <SectionHeader
-                  number="10"
+                  number={summaryNumber}
                   cadence="Summary"
                   title="What it all comes down to"
                   lede="My approach to Superfocus is relatively straightforward."

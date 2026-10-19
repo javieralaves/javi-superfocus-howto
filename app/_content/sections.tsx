@@ -2,12 +2,13 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, CalendarSync } from "lucide-react";
 import { CoachingIllustration } from "@/components/illustrations/coaching-illustration";
-import { CoachIcon } from "@/components/illustrations/icons";
+import { CoachIcon, CompassViewIcon } from "@/components/illustrations/icons";
 import { FlowIllustration } from "@/components/illustrations/flow-illustration";
 import { ConnectCalendarsVisual } from "@/components/visuals/connect-calendars";
 import { DailySyncVisual } from "@/components/visuals/daily-sync";
 import { ProtectTimeVisual } from "@/components/visuals/protect-time";
 import { RecordRealityVisual } from "@/components/visuals/record-reality";
+import { SeasonStructureVisual } from "@/components/visuals/season-structure";
 import { StayUpToDateVisual } from "@/components/visuals/stay-up-to-date";
 import { WeeklySyncVisual } from "@/components/visuals/weekly-sync";
 
@@ -33,8 +34,84 @@ function PullQuote({ children }: { children: ReactNode }) {
 
 export const sections: Section[] = [
   {
-    id: "connect-calendars",
+    id: "start-with-what-matters",
     number: "01",
+    cadence: "Getting started",
+    title: "Start with what matters, then organize the work",
+    shortTitle: "Start with what matters",
+    lede: "Give yourself a useful starting point for the next three months.",
+    visual: {
+      node: <SeasonStructureVisual />,
+      caption: "A goal is something you're working toward. A support area is something you keep looking after.",
+    },
+    body: (
+      <>
+        <p>
+          Before I start planning my calendar, I take a step back and think
+          about what I want to accomplish during the season.
+        </p>
+        <p>I try to keep a few distinctions in mind:</p>
+        <ul>
+          <li>
+            <strong>Goals</strong> are the meaningful outcomes I want to work
+            toward over the next three months.
+          </li>
+          <li>
+            <strong>Support areas</strong> are ongoing responsibilities that
+            deserve attention, even if there&apos;s nothing specific to
+            complete.
+          </li>
+          <li>
+            <strong>Milestones</strong> help me break goals into smaller
+            checkpoints or organize related projects and work.
+          </li>
+          <li>
+            <strong>Tasks</strong> are the individual actions that help me make
+            progress. Some can become recurring habits.
+          </li>
+        </ul>
+        <p>
+          I don&apos;t need everything to fit perfectly. And I don&apos;t need
+          to schedule every task upfront.
+        </p>
+        <p>
+          Once I have a structure that makes sense, I can protect time for
+          what&apos;s important and figure out the details as each day
+          approaches.
+        </p>
+        <p>
+          If you&apos;re unsure how to organize your own goals, I&apos;ve put
+          together a longer walkthrough, including a prompt you can use with
+          ChatGPT or Claude.
+        </p>
+        <Link
+          href="/plan-your-season"
+          className="group !mt-10 flex items-center gap-3 rounded-xl border border-rule bg-white/50 px-4 py-3 text-sm leading-snug text-faded transition-colors hover:border-ink/15 hover:bg-white"
+        >
+          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+            <CompassViewIcon className="size-3.5" />
+          </span>
+          <span className="flex-1">
+            <span className="font-medium text-ink">
+              Not sure how to organize your goals?
+            </span>{" "}
+            A practical walkthrough for planning your season, with examples and
+            a ready-to-use AI prompt.
+          </span>
+          <span className="hidden shrink-0 font-medium text-ink sm:inline">
+            Plan your season
+          </span>
+          <ArrowRight
+            className="size-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+            aria-hidden
+          />
+        </Link>
+      </>
+    ),
+  },
+  {
+    id: "connect-calendars",
+    number: "02",
     cadence: "Setup",
     title: "Connect my external calendars",
     shortTitle: "Connect calendars",
@@ -79,7 +156,7 @@ export const sections: Section[] = [
   },
   {
     id: "protect-time",
-    number: "02",
+    number: "03",
     cadence: "Weekly",
     title: "Protect time for my goals every week",
     shortTitle: "Protect time weekly",
@@ -114,7 +191,7 @@ export const sections: Section[] = [
   },
   {
     id: "stay-up-to-date",
-    number: "03",
+    number: "04",
     cadence: "Throughout the day",
     title: "Keep my goals, tasks, and context up to date",
     shortTitle: "Keep things up to date",
@@ -133,7 +210,16 @@ export const sections: Section[] = [
         <p>
           I think of goals as meaningful outcomes I want to achieve within the
           current season, which I can reasonably work backward from. Each goal
-          has tasks that represent the work needed to make progress.
+          has tasks that represent the work needed to make progress. (If
+          you&apos;re still working out what your goals should be, I cover how
+          I decide in{" "}
+          <Link
+            href="/plan-your-season"
+            className="font-medium text-ink underline decoration-rule underline-offset-4 hover:decoration-ink"
+          >
+            how to plan your season
+          </Link>
+          .)
         </p>
         <p>
           I try to keep those tasks current, adding new ones, adjusting existing
@@ -163,7 +249,7 @@ export const sections: Section[] = [
   },
   {
     id: "daily-sync",
-    number: "04",
+    number: "05",
     cadence: "Daily · Evening",
     title: "Complete my daily coach sync in the evening",
     shortTitle: "Daily coach sync",
@@ -213,7 +299,7 @@ export const sections: Section[] = [
   },
   {
     id: "weekly-sync",
-    number: "05",
+    number: "06",
     cadence: "Weekly",
     title: "Complete my weekly coach sync to reflect and adjust",
     shortTitle: "Weekly coach sync",
@@ -255,7 +341,7 @@ export const sections: Section[] = [
   },
   {
     id: "trajectory",
-    number: "06",
+    number: "07",
     cadence: "Seasonal",
     title: "Use coach reads and trajectory to guide the season",
     shortTitle: "Coach reads & trajectory",
@@ -314,7 +400,7 @@ export const sections: Section[] = [
   },
   {
     id: "mac-app",
-    number: "07",
+    number: "08",
     cadence: "Optional",
     title: "Use the Mac app for additional focus and accountability",
     shortTitle: "The Mac app",
@@ -352,7 +438,7 @@ export const sections: Section[] = [
   },
   {
     id: "record-reality",
-    number: "08",
+    number: "09",
     cadence: "Daily",
     title: "Record what actually happened, not just what I planned",
     shortTitle: "Record what happened",
@@ -398,7 +484,7 @@ export const sections: Section[] = [
   },
   {
     id: "keep-it-manageable",
-    number: "09",
+    number: "10",
     cadence: "Principle",
     title: "Keep the routine manageable",
     shortTitle: "Keep it manageable",
@@ -438,7 +524,7 @@ export const sections: Section[] = [
 export const rhythm = [
   {
     label: "Seasonally",
-    text: "Define meaningful outcomes I want to work toward.",
+    text: "Decide what matters most, and give my goals and responsibilities a place.",
   },
   {
     label: "Weekly",
