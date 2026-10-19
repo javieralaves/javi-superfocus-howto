@@ -211,20 +211,20 @@ export default function FirstCoachRead() {
           </div>
         </section>
 
-        <div className="mt-14 flex flex-col gap-5 rounded-2xl bg-ink p-7 text-paper sm:flex-row sm:items-center sm:p-8">
+        <div className="mt-14 flex flex-col gap-5 rounded-2xl border border-rule bg-white p-7 sm:flex-row sm:items-center sm:p-8">
           <Image
             src="/javi.jpeg"
             alt="Javier Alaves"
             width={44}
             height={44}
-            className="size-11 shrink-0 rounded-full object-cover ring-1 ring-white/15"
+            className="size-11 shrink-0 rounded-full object-cover ring-1 ring-rule"
           />
-          <p className="flex-1 text-[0.95rem] leading-relaxed text-paper/80">
+          <p className="flex-1 text-[0.95rem] leading-relaxed text-ink/75">
             See how coach reads fit into a weekly routine in the main guide.
           </p>
           <Link
             href="/#trajectory"
-            className="inline-flex shrink-0 items-center self-start rounded-full bg-paper px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-paper/85 sm:self-center"
+            className="inline-flex shrink-0 items-center self-start rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-ink/85 sm:self-center"
           >
             Read the guide
           </Link>
