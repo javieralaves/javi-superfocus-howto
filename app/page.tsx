@@ -239,7 +239,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="mt-14 rounded-2xl bg-ink px-8 py-10 text-paper sm:px-10 sm:py-12">
+                <div className="mt-14 rounded-2xl bg-ink p-8 text-paper sm:p-10">
                   <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#a99cf2]">
                     In short
                   </p>
@@ -251,31 +251,35 @@ export default function Home() {
                   </p>
                 </div>
 
-                <aside className="mt-6 flex gap-4 rounded-2xl border border-rule px-6 py-5 sm:px-8">
+                <aside className="mt-6 flex flex-col gap-6 rounded-2xl border border-rule bg-white/60 p-6 sm:flex-row sm:items-center sm:p-7">
                   <span
                     aria-hidden="true"
-                    className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent"
+                    className="flex size-14 shrink-0 items-center justify-center self-start rounded-full bg-white ring-1 ring-rule sm:self-center"
                   >
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.75"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="size-[1.1rem]"
-                    >
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                      <circle cx="9" cy="7" r="4" />
-                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <svg viewBox="0 0 127 127" className="size-6">
+                      <path
+                        d="M27.2 80c0 7.3-5.9 13.2-13.2 13.2C6.7 93.2.8 87.3.8 80c0-7.3 5.9-13.2 13.2-13.2h13.2V80zm6.6 0c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2v33c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V80z"
+                        fill="#E01E5A"
+                      />
+                      <path
+                        d="M47 27c-7.3 0-13.2-5.9-13.2-13.2C33.8 6.5 39.7.6 47 .6c7.3 0 13.2 5.9 13.2 13.2V27H47zm0 6.7c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H13.9C6.6 60.1.7 54.2.7 46.9c0-7.3 5.9-13.2 13.2-13.2H47z"
+                        fill="#36C5F0"
+                      />
+                      <path
+                        d="M99.9 46.9c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H99.9V46.9zm-6.6 0c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V13.8C66.9 6.5 72.8.6 80.1.6c7.3 0 13.2 5.9 13.2 13.2v33.1z"
+                        fill="#2EB67D"
+                      />
+                      <path
+                        d="M80.1 99.8c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V99.8h13.2zm0-6.6c-7.3 0-13.2-5.9-13.2-13.2 0-7.3 5.9-13.2 13.2-13.2h33.1c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H80.1z"
+                        fill="#ECB22E"
+                      />
                     </svg>
                   </span>
                   <div className="flex-1">
-                    <p className="font-medium text-ink">
+                    <p className="text-lg font-medium text-ink">
                       Join the Superfocus community
                     </p>
-                    <p className="mt-1 text-sm leading-relaxed text-ink/70">
+                    <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/70">
                       We have a Slack community where you can connect with other
                       Superfocus users, ask questions, share experiences, and
                       stay up to date with what we&apos;re building. Open
@@ -288,7 +292,7 @@ export default function Home() {
                   </div>
                 </aside>
 
-                <div className="mt-6 flex flex-col gap-6 rounded-2xl border border-rule bg-white/60 px-8 py-8 sm:flex-row sm:items-center sm:px-10">
+                <div className="mt-6 flex flex-col gap-6 rounded-2xl border border-rule bg-white/60 p-6 sm:flex-row sm:items-center sm:p-7">
                   <span className="relative shrink-0 self-start sm:self-center">
                     <Image
                       src="/javi.jpeg"
