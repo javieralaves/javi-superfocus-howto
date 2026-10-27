@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { ArrowRight, CalendarSync } from "lucide-react";
+import { ArrowRight, CalendarSync, Waypoints } from "lucide-react";
 import { CoachingIllustration } from "@/components/illustrations/coaching-illustration";
 import { CoachIcon, CompassViewIcon } from "@/components/illustrations/icons";
 import { FlowIllustration } from "@/components/illustrations/flow-illustration";
+import { AIAssistedPlanningVisual } from "@/components/visuals/ai-assisted-planning";
 import { ConnectCalendarsVisual } from "@/components/visuals/connect-calendars";
 import { DailySyncVisual } from "@/components/visuals/daily-sync";
 import { ProtectTimeVisual } from "@/components/visuals/protect-time";
@@ -484,8 +485,88 @@ export const sections: Section[] = [
     ),
   },
   {
-    id: "keep-it-manageable",
+    id: "ai-assisted-planning",
     number: "10",
+    cadence: "Optional · When useful",
+    title: "Bring the rest of my work into the plan",
+    shortTitle: "Plan with AI assistants",
+    lede: "Use context from elsewhere to decide what deserves attention next.",
+    visual: {
+      node: <AIAssistedPlanningVisual />,
+      caption:
+        "Recent work, a few hours of available time, and an assistant's suggestions become a plan I can review and keep.",
+    },
+    body: (
+      <>
+        <p>Most of my work doesn&apos;t happen inside Superfocus.</p>
+        <p>
+          I use GitHub for software projects, other tools for research and
+          meetings, and AI assistants to help me think through what I&apos;m
+          working on. Useful information and decisions accumulate in different
+          places throughout the day.
+        </p>
+        <p>
+          Since Superfocus introduced its <strong>MCP integration</strong>,
+          I&apos;ve started bringing more of that context into my planning
+          conversations.
+        </p>
+        <p>
+          For example, after a meeting or a few hours exploring a new direction,
+          I might ask ChatGPT to review the relevant notes, look at my current
+          Superfocus goals and schedule, and suggest what deserves my attention
+          next.
+        </p>
+        <p>
+          The assistant can help me decide whether to add a task, revise a
+          milestone, adjust my schedule, or simply leave things as they are.{" "}
+          <strong>I review those suggestions before making changes.</strong>
+        </p>
+        <p>
+          When something important comes out of the conversation, I often
+          capture a short memo in my <strong>Superfocus Journal</strong>{" "}
+          explaining what happened, what I decided, and why. That gives my coach
+          and connected assistants useful context to work with when I return to
+          the project.
+        </p>
+        <p>
+          I still use Superfocus directly for my calendar, tasks, and coach
+          syncs. The assistant just gives me another way to connect the work
+          happening elsewhere to the goals I&apos;m trying to achieve.
+        </p>
+        <p>
+          You don&apos;t need this setup to get value from Superfocus. But if
+          you already use AI assistants or have projects spread across different
+          tools, I&apos;ve found it makes the system considerably more useful.
+        </p>
+        <Link
+          href="/ai-assisted-planning"
+          className="group !mt-10 flex items-center gap-3 rounded-xl border border-rule bg-white/50 px-4 py-3 text-sm leading-snug text-faded transition-colors hover:border-ink/15 hover:bg-white"
+        >
+          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+            <Waypoints className="size-3.5" aria-hidden />
+          </span>
+          <span className="flex-1">
+            <span className="font-medium text-ink">
+              Already use AI assistants for your work?
+            </span>{" "}
+            Here&apos;s how I connect my existing projects, notes, and decisions
+            to Superfocus, with a practical walkthrough and a ready-to-use
+            prompt.
+          </span>
+          <span className="hidden shrink-0 font-medium text-ink sm:inline">
+            See my workflow
+          </span>
+          <ArrowRight
+            className="size-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+            aria-hidden
+          />
+        </Link>
+      </>
+    ),
+  },
+  {
+    id: "keep-it-manageable",
+    number: "11",
     cadence: "Principle",
     title: "Keep the routine manageable",
     shortTitle: "Keep it manageable",

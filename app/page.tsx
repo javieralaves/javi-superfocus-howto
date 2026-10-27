@@ -88,7 +88,7 @@ export default function Home() {
               <span className="size-1.5 rounded-full bg-accent" />
               {sections.length + 1} sections
             </span>
-            <span>About 9 min read</span>
+            <span>About 10 min read</span>
             <a
               href={`#${introId}`}
               className="inline-flex items-center gap-1.5 rounded-full bg-ink px-4 py-2 font-medium text-paper transition-colors hover:bg-ink/85"
@@ -237,6 +237,11 @@ export default function Home() {
                     want to accomplish with how I actually spend my time, while
                     giving me an opportunity to reflect and improve along the
                     way.
+                  </p>
+                  <p>
+                    When I need help connecting recent work to my plan, I can
+                    bring in more context through a connected AI assistant. The
+                    routine works without one.
                   </p>
                 </div>
 

@@ -100,13 +100,16 @@ export function Panel({ children, className }: { children: ReactNode; className?
  * Frames product cards at native size instead of inside a scaled Stage,
  * so their product-sized text stays legible on phones.
  */
-export function StepFrame({ label, children }: { label: string; children: ReactNode }) {
-  return (
-    <figure
-      aria-label={label}
-      className="my-8 rounded-[24px] border border-rule bg-white/55 p-1.5 shadow-[0_1px_0_rgba(0,0,0,0.02),0_20px_40px_-30px_rgba(15,15,25,0.22)]"
-    >
+export function StepFrame({ label, caption, children }: { label: string; caption?: string; children: ReactNode }) {
+  const frame = (
+    <div className="rounded-[24px] border border-rule bg-white/55 p-1.5 shadow-[0_1px_0_rgba(0,0,0,0.02),0_20px_40px_-30px_rgba(15,15,25,0.22)]">
       <div className="sf-ui rounded-[18px] bg-[#f5f6f8] p-3 sm:p-4">{children}</div>
+    </div>
+  );
+  return (
+    <figure aria-label={label} className="my-8">
+      {frame}
+      {caption && <figcaption className="mt-3 px-2 text-sm leading-snug text-faded">{caption}</figcaption>}
     </figure>
   );
 }
