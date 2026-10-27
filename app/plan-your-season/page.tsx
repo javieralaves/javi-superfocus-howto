@@ -293,19 +293,25 @@ export default function PlanYourSeason() {
           </p>
 
           <aside className="mt-8 border-l-2 border-accent pl-4">
-            <p className="text-[0.95rem] leading-relaxed font-medium text-ink">
-              Already started your season?
-            </p>
-            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/70">
-              You don&apos;t necessarily need to start over. You can rename
-              goals and milestones, reorganize tasks, and change a goal into a
-              support area or vice versa.
-            </p>
-            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/70">
-              I&apos;d recommend adjusting what you&apos;ve already created
-              before considering a full reset. Your first structure doesn&apos;t
-              need to be perfect. You can refine it as you learn what works for
-              you.
+            <p className="text-[0.95rem] leading-relaxed text-ink/70">
+              <span className="font-medium text-ink">Already started your season?</span>{" "}
+              Revise it first: rename goals and milestones, reorganize tasks, or
+              turn a goal into a support area. The first structure doesn&apos;t
+              need to be perfect. Both ways to begin again are under{" "}
+              <strong className="font-medium text-ink">Settings → General</strong>.{" "}
+              <strong className="font-medium text-ink">Restart season</strong>{" "}
+              (Season) ends this season and plans the next from what you have:
+              keep, retarget, or archive each goal, and archiving puts away its
+              tasks, milestones, and upcoming time. You choose whether the coach
+              keeps what it knows about you. Connected calendars, the journal,
+              past seasons, and settings stay.{" "}
+              <strong className="font-medium text-ink">Start fresh</strong>{" "}
+              (Account) deletes goals, tasks including the Inbox, planned time
+              and its upcoming calendar copies, seasons, reviews, focus history,
+              the journal, and coach memory, then runs setup again. Login,
+              subscription, connected calendars and their events, integrations,
+              and settings stay, including daily and weekly coach syncs. Type
+              fresh to confirm. It can&apos;t be undone.
             </p>
           </aside>
         </Part>
