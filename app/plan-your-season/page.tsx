@@ -359,6 +359,11 @@ export default function PlanYourSeason() {
               fill them.
             </p>
             <p>
+              Choosing the day for a task, reserving an hour for it, and setting
+              a deadline are three different decisions. I usually only make the
+              first until the day gets close.
+            </p>
+            <p>
               If you&apos;d like a hand, the coach can look at your calendar,
               goals, and the time you&apos;ve protected when you plan with it,
               and propose changes you can keep or undo. Treat its suggestions as

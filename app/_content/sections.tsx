@@ -281,11 +281,12 @@ export const sections: Section[] = [
           I&apos;ll identify a handful of tasks that I want to focus on.
         </p>
         <p>
-          I sometimes use task deadlines as a way of loosely assigning work to a
-          particular day, rather than as strict due dates. If I have tasks
-          assigned to tomorrow, I try to make room for them. If they no longer
-          fit, I&apos;ll move them to another day. This is simply my personal
-          planning preference, rather than how everyone should use deadlines.
+          Once I know which tasks matter tomorrow, I set <strong>Plan for</strong>{" "}
+          to that day. That puts them on the day without taking an hour. When I
+          already know when I&apos;ll do one, I drag it onto the calendar, usually
+          into time I&apos;ve protected. I set a <strong>deadline</strong> only
+          when the work actually has to be finished by a date. If a task no
+          longer fits, I move its planned day.
         </p>
         <p>
           I rarely ask the coach to help me plan during the daily sync because I

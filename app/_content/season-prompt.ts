@@ -11,7 +11,7 @@ I don't necessarily have a clear system yet. I'd like to describe what's happeni
 - **Tasks:** Specific actions associated with goals, milestones, or support areas.
 - **Habits:** Recurring actions I want to maintain.
 - **Protected time:** Calendar blocks reserved for a goal or support area. I don't need to decide which tasks I'll complete when creating these blocks.
-- **Daily planning:** As the day approaches, I can choose which tasks deserve attention and optionally schedule them into the time I've protected.
+- **Daily planning:** As the day approaches, I choose which tasks deserve attention and set Plan for to that day. That places a task on a day without taking an hour. Scheduling reserves specific hours, usually inside time I've protected. A deadline is only for work that has to be finished by a date.
 - **Coach syncs:** Daily and weekly opportunities to reflect on progress, reconsider priorities, and adjust plans.
 
 Superfocus doesn't currently have a dedicated project object. Please work within the structure above rather than inventing features.

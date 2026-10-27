@@ -136,7 +136,7 @@ function TomorrowStep({
       <div className="min-w-0 flex-1">
         <p className="type-heading-sm font-semibold text-foreground">Here&apos;s a starting point for tomorrow</p>
         <p className="mt-0.5 type-body text-muted-foreground">Your protected time is already in place.</p>
-        <p className="mb-1.5 mt-4 type-caption font-medium text-muted-foreground">Due tomorrow</p>
+        <p className="mb-1.5 mt-4 type-caption font-medium text-muted-foreground">Planned for tomorrow</p>
         <div className="flex flex-col gap-1">
           {DUE.map((t) => {
             const goal = GOALS[t.goal];
@@ -411,7 +411,7 @@ export function DailySyncVisual() {
     <Stage
       width={640}
       height={460}
-      label="The Superfocus daily coach sync: rate today's progress, place tomorrow's due tasks into protected time or move them, then see the coach read and trajectory it unlocks."
+      label="The Superfocus daily coach sync: rate today's progress, place tomorrow's planned tasks into protected time or move them, then see the coach read and trajectory it unlocks."
     >
       <DailySyncScene />
     </Stage>
